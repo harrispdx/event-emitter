@@ -1,0 +1,19 @@
+{
+  "name": "event-emitter",
+  "version": "1.0.0",
+  "description": "a simple event emitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrispdx/event-emitter.git"
+  },
+  "author": "Kaitlyn Harris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrispdx/event-emitter/issues"
+  },
+  "homepage": "https://github.com/harrispdx/event-emitter#readme"
+}
