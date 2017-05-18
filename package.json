@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/harrispdx/event-emitter/issues"
   },
-  "homepage": "https://github.com/harrispdx/event-emitter#readme"
+  "homepage": "https://github.com/harrispdx/event-emitter#readme",
+  "devDependencies": {
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2"
+  }
 }
