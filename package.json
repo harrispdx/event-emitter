@@ -2,7 +2,7 @@
   "name": "event-emitter",
   "version": "1.0.0",
   "description": "a simple event emitter",
-  "main": "index.js",
+  "main": "eventemitter.js",
   "scripts": {
     "test": "test"
   },
@@ -18,6 +18,7 @@
   "homepage": "https://github.com/harrispdx/event-emitter#readme",
   "devDependencies": {
     "snazzy": "^7.0.0",
-    "standard": "^10.0.2"
+    "standard": "^10.0.2",
+    "tap": "^10.3.2"
   }
 }
