@@ -1,7 +1,8 @@
 const tap = require('tap')
+const emitter = require('./eventemitter')
+
 
 tap.test('adding and removing handlers', function (t) {
-  const emitter = require('./eventemitter')
   const eventEmitter = new emitter.EventEmitter()
 
   const test = function () {
@@ -40,7 +41,6 @@ tap.test('adding and removing handlers', function (t) {
 })
 
 tap.test('trying to do wrong things', function (t) {
-  const emitter = require('./eventemitter')
   const eventEmitter = new emitter.EventEmitter()
 
   t.throws(function () {
@@ -55,7 +55,6 @@ tap.test('trying to do wrong things', function (t) {
 })
 
 tap.test('arguments', function (t) {
-  const emitter = require('./eventemitter')
   const eventEmitter = new emitter.EventEmitter()
 
   t.plan(3)

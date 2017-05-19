@@ -4,7 +4,7 @@ A simple JS event emitter module
 
 ## Usage
 
-`const emitter = require('./path/to/EventEmitter.js')`
+`const emitter = require('./path/to/eventemitter.js')`
 
 `const eventEmitter = new emitter.EventEmitter()`
 
