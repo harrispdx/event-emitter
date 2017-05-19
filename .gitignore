@@ -1,3 +1,5 @@
+coverage/*
+
 ### macos ###
 *.DS_Store
 .AppleDouble
@@ -28,10 +30,6 @@ Temporary Items
 
 ### visualstudiocode ###
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 
 ### node ###
 # Logs

@@ -21,9 +21,6 @@ EventEmitter.prototype.once = function (event, handler) {
   let r = function () {
     this.removeHandler(event, handler)
     this.removeHandler(event, r)
-    if (this.listeners[event].length === 0) {
-      delete this.listeners[event]
-    }
   }
   this.listeners[event] = this.listeners[event] || []
   this.listeners[event].push(handler)
@@ -47,10 +44,6 @@ EventEmitter.prototype.off = EventEmitter.prototype.removeHandler = function (ev
   if (!this.listeners || !this.listeners[event]) {
     return this
   }
-  if (typeof handler !== 'function') {
-    throw TypeError('Handler is not a function')
-  }
-
   let handlers = this.listeners[event]
   for (var i = 0; i < handlers.length; i++) {
     if (handlers[i] === handler) {
@@ -58,16 +51,13 @@ EventEmitter.prototype.off = EventEmitter.prototype.removeHandler = function (ev
       if (this.listeners[event].length === 0) {
         delete this.listeners[event]
       }
-      return this
+      break
     }
   }
   return this
 }
 
 EventEmitter.prototype.removeAllHandlers = function (event) {
-  if (!this.listeners || !this.listeners[event]) {
-    return this
-  }
   delete this.listeners[event]
   return this
 }

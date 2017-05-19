@@ -4,7 +4,7 @@
   "description": "a simple event emitter",
   "main": "eventemitter.js",
   "scripts": {
-    "test": "test"
+    "test": "tap test.js"
   },
   "repository": {
     "type": "git",

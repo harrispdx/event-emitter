@@ -4,9 +4,9 @@ A simple JS event emitter module
 
 ## Usage
 
-`var emitter = require('./path/to/EventEmitter.js')`
+`const emitter = require('./path/to/EventEmitter.js')`
 
-`var eventEmitter = new emitter.EventEmitter()`
+`const eventEmitter = new emitter.EventEmitter()`
 
 Instantiates an emitter with a listeners object.
 
